@@ -17,6 +17,7 @@ class ProduitAuxEncheres : public Produit
 
     double obtenirPrixInitial() const;
     Client *obtenirEncherisseur() const;
+    void modifierEncherisseur(Client* encherisseur); //Ajout de modificateur d'encherisseur afin de pouvoir reinitialiser cette valeur depuis Client::reinitialiser().
     void afficher() const;
 
     void modifierPrixInitial(double prixInitial);

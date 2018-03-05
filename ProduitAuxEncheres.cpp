@@ -24,7 +24,10 @@ Client *ProduitAuxEncheres::obtenirEncherisseur() const
 {
     return encherisseur_;
 }
-
+void ProduitAuxEncheres::modifierEncherisseur(Client* encherisseur)
+{
+	encherisseur_ = encherisseur;
+}
 void ProduitAuxEncheres::afficher() const
 {
     // TODO
@@ -37,5 +40,16 @@ void ProduitAuxEncheres::modifierPrixInitial(double prixInitial)
 
 void ProduitAuxEncheres::mettreAJourEnchere(Client *encherisseur, double nouveauPrix)
 {
-    // TODO
+	
+	if(encherisseur_ != encherisseur && nouveauPrix > prix_){
+		prix_ = nouveauPrix;
+		
+		if(encherisseur_){
+			encherisseur_->enleverProduit(this);
+		}
+		
+		encherisseur_ = encherisseur;
+		encherisseur_->ajouterProduit(this);
+	}
+	
 }

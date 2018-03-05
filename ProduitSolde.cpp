@@ -15,7 +15,7 @@ ProduitSolde::ProduitSolde(Fournisseur *fournisseur, const string &nom,
 
 double ProduitSolde::obtenirPrix() const
 {
-    // TODO
+	return prix_ * (100 - pourcentageRabais_) /100;
 }
 
 void ProduitSolde::afficher() const

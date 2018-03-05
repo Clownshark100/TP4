@@ -23,7 +23,7 @@ class Usager
     void modifierPrenom(const string &prenom);
     void modifierIdentifiant(int identifiant);
     void modifierCodePostal(const string &codePostal);
-    void reinitialiser();
+    virtual void reinitialiser() = 0;
     void ajouterProduit(Produit *produit);
     void enleverProduit(Produit *produit);
 

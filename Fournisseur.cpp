@@ -33,7 +33,12 @@ void Fournisseur::afficherProfil() const
 
 void Fournisseur::reinitialiser()
 {
-    // TODO
+    for(int i = catalogue_.size()-1; i>=0; i--){
+	
+		catalogue_[i] -> modifierFournisseur(nullptr);
+		catalogue_.pop_back();
+	
+	}
 }
 
 void Fournisseur::ajouterProduit(Produit *produit)

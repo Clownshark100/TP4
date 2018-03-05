@@ -16,7 +16,7 @@ class Client : public Usager
 
     unsigned int obtenirCodeClient() const;
     vector<Produit *> obtenirPanier() const;
-    double obtenirTotalAPayer() const;
+    virtual double obtenirTotalAPayer() const;
     void afficherPanier() const;
     void afficherProfil() const;
 

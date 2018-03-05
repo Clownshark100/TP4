@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Gestionnaire.h"
 
 vector<Usager *> Gestionnaire::obtenirUsagers() const
@@ -17,15 +18,24 @@ double Gestionnaire::obtenirChiffreAffaires() const
 
 void Gestionnaire::ajouterUsager(Usager *usager)
 {
-    // TODO
+    for(int i=0; i<usagers_.size(); i++){
+		if(usagers_[i] == usager){
+			return;
+		}
+	}
+	usagers_.push_back(usager);
 }
 
 void Gestionnaire::reinitialiser()
 {
-    // TODO
+    for(int i=0; i<usagers_.size(); i++){
+		usagers_[i] -> reinitialiser();
+	}
 }
 
 void Gestionnaire::encherir(Client *client, ProduitAuxEncheres *produit, double montant) const
 {
-    // TODO
+    if(montant > produit->obtenirPrix()){
+		produit->mettreAJourEnchere(client, montant);
+	}
 }

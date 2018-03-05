@@ -25,7 +25,7 @@ int Produit::obtenirReference() const
 
 double Produit::obtenirPrix() const
 {
-    // TODO
+    return prix_;
 }
 
 Fournisseur *Produit::obtenirFournisseur() const

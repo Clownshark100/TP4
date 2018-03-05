@@ -15,7 +15,7 @@ class Produit
 
     string obtenirNom() const;
     int obtenirReference() const;
-    double obtenirPrix() const;
+    virtual double obtenirPrix() const;
     Fournisseur *obtenirFournisseur() const;
     void afficher() const;
 

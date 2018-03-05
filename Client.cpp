@@ -1,4 +1,5 @@
 #include "Client.h"
+#include "ProduitAuxEncheres.h"
 #include <iostream>
 
 Client::Client(unsigned int codeClient)
@@ -26,7 +27,11 @@ vector<Produit *> Client::obtenirPanier() const
 
 double Client::obtenirTotalAPayer() const
 {
-    // TODO
+	double prixTotal = 0;
+    for(int i=0; i<panier_.size(); i++){
+		prixTotal += panier_[i]-> obtenirPrix();
+	}
+	return prixTotal;
 }
 
 void Client::afficherPanier() const
@@ -71,5 +76,13 @@ void Client::ajouterProduit(Produit *produit)
 
 void Client::reinitialiser()
 {
-    // TODO
+    for(int i = panier_.size()-1; i>=0; i--){
+
+		ProduitAuxEncheres* pae = dynamic_cast<ProduitAuxEncheres*>(panier_[i]);
+		if(pae){
+			pae -> modifierPrix(pae->obtenirPrixInitial());
+			pae -> modifierEncherisseur(nullptr);
+		}
+		panier_.pop_back();
+	}
 }
