@@ -30,7 +30,9 @@ void ProduitAuxEncheres::modifierEncherisseur(Client* encherisseur)
 }
 void ProduitAuxEncheres::afficher() const
 {
-    // TODO
+	Produit::afficher();
+	cout << "		prix initial:	$" << prixInitial_ << endl
+		<< "		encherisseur:	" << encherisseur_->obtenirNom() << endl;
 }
 
 void ProduitAuxEncheres::modifierPrixInitial(double prixInitial)

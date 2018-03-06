@@ -28,7 +28,8 @@ void Fournisseur::afficherCatalogue() const
 
 void Fournisseur::afficherProfil() const
 {
-    // TODO
+	Usager::afficherProfil();
+	cout << "	catalogue:	" << catalogue_.size() << endl;
 }
 
 void Fournisseur::reinitialiser()

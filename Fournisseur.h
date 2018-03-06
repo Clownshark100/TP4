@@ -16,11 +16,11 @@ class Fournisseur : public Usager
 
     vector<Produit *> obtenirCatalogue() const;
     void afficherCatalogue() const;
-    void afficherProfil() const;
+    virtual void afficherProfil() const;
 
-    void reinitialiser();
-    void ajouterProduit(Produit *produit);
-    void enleverProduit(Produit *produit);
+    virtual void reinitialiser();
+    virtual void ajouterProduit(Produit *produit);
+    virtual void enleverProduit(Produit *produit);
 
   private:
     vector<Produit *> catalogue_;

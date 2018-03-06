@@ -20,5 +20,6 @@ double ProduitSolde::obtenirPrix() const
 
 void ProduitSolde::afficher() const
 {
-    // TODO
+	Produit::afficher();
+	cout << "		rabais:		" << pourcentageRabais_ << "%" << endl;
 }

@@ -16,16 +16,16 @@ class Usager
     string obtenirPrenom() const;
     int obtenirIdentifiant() const;
     string obtenirCodePostal() const;
-    double obtenirTotalAPayer() const;
-    void afficherProfil() const;
+    virtual double obtenirTotalAPayer() const;
+    virtual void afficherProfil() const;
 
     void modifierNom(const string &nom);
     void modifierPrenom(const string &prenom);
     void modifierIdentifiant(int identifiant);
     void modifierCodePostal(const string &codePostal);
     virtual void reinitialiser() = 0;
-    void ajouterProduit(Produit *produit);
-    void enleverProduit(Produit *produit);
+    virtual void ajouterProduit(Produit *produit) = 0;
+    virtual void enleverProduit(Produit *produit) = 0;
 
   private:
     string nom_;

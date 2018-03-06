@@ -8,12 +8,18 @@ vector<Usager *> Gestionnaire::obtenirUsagers() const
 
 void Gestionnaire::afficherLesProfils() const
 {
-    // TODO
+	for (int i = 0; i < usagers_.size(); i++) {
+		usagers_[i]->afficherProfil();
+	}
 }
 
 double Gestionnaire::obtenirChiffreAffaires() const
 {
-    // TODO
+	double chiffreAffaires = 0;
+	for (int i = 0; i < usagers_.size(); i++) {
+		chiffreAffaires+= usagers_[i]->obtenirTotalAPayer();
+	}
+	return chiffreAffaires;
 }
 
 void Gestionnaire::ajouterUsager(Usager *usager)

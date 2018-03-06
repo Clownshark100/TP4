@@ -45,7 +45,9 @@ void Client::afficherPanier() const
 
 void Client::afficherProfil() const
 {
-    // TODO
+	Usager::afficherProfil();
+	cout << "	code client:	" << codeClient_ << endl 
+		<<  "	panier:		" << panier_.size() << " elements" << endl;
 }
 
 void Client::modifierCodeClient(unsigned int codeClient)

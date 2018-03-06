@@ -35,7 +35,9 @@ Fournisseur *Produit::obtenirFournisseur() const
 
 void Produit::afficher() const
 {
-    // TODO
+	cout <<"	"<< nom_ << endl
+		<< "		reference:	" << reference_ << endl
+		<< "		prix:		$" << prix_ << endl;
 }
 
 void Produit::modifierNom(const string &nom)
