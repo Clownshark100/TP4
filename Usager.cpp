@@ -30,11 +30,6 @@ string Usager::obtenirCodePostal() const
     return codePostal_;
 }
 
-double Usager::obtenirTotalAPayer() const
-{
-	return 0;
-}
-
 void Usager::afficherProfil() const
 {
 	cout << nom_ << ", " << prenom_ << "(" << identifiant_ << ")" << endl

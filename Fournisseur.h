@@ -16,8 +16,11 @@ class Fournisseur : public Usager
 
     vector<Produit *> obtenirCatalogue() const;
     void afficherCatalogue() const;
-    virtual void afficherProfil() const;
 
+    //Nous preferons dire qu'un Fournisseur est un Usager special qui n'a rien a payer
+    //Plutot que de dire qu'un Usager n'a rien a payer par defaut
+    virtual double obtenirTotalAPayer() const;
+    virtual void afficherProfil() const;
     virtual void reinitialiser();
     virtual void ajouterProduit(Produit *produit);
     virtual void enleverProduit(Produit *produit);

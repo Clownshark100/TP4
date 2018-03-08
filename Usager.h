@@ -16,7 +16,9 @@ class Usager
     string obtenirPrenom() const;
     int obtenirIdentifiant() const;
     string obtenirCodePostal() const;
-    virtual double obtenirTotalAPayer() const;
+    //Il est sensé de dire que nous ne pouvons déterminer le total a Payer d'un Usager abstrait,
+    //car il n'a aucune propriété permettant de le déterminer.
+    virtual double obtenirTotalAPayer() const = 0;
     virtual void afficherProfil() const;
 
     void modifierNom(const string &nom);

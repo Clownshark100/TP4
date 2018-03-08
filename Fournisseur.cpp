@@ -26,6 +26,15 @@ void Fournisseur::afficherCatalogue() const
     cout << endl;
 }
 
+//Nous preferons dire qu'un Fournisseur est un Usager special qui n'a rien a payer
+//Plutot que de dire qu'un Usager n'a rien a payer par defaut
+double Fournisseur::obtenirTotalAPayer() const
+{
+
+return 0.;
+
+}
+
 void Fournisseur::afficherProfil() const
 {
 	Usager::afficherProfil();
