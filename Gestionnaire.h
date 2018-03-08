@@ -1,3 +1,11 @@
+/********************************************
+* Titre: Travail pratique #4 - Gestionnaire.h
+* Date: 12 mars 2018
+* Auteur: Daniel Nahum et Loic LeBlanc
+*
+* Classe Gestionnaire, permet de gerer les divers usagers.
+* Le gestionnaire met a jour une enchere et a le total des achats de tout les clients.
+*******************************************/
 #ifndef GESTIONNAIRE_H
 #define GESTIONNAIRE_H
 

@@ -1,3 +1,12 @@
+/********************************************
+* Titre: Travail pratique #4 - Fournisseur.h
+* Date: 12 mars 2018
+* Auteur: Daniel Nahum et Loic LeBlanc
+*
+* Classe Fournisseur, permet la création et la modification d'un
+* Fournisseur ayant les attributs derives de la classe Usager.
+* Le fournisseur a un catalogue qui contient des produits
+*******************************************/
 #ifndef FOURNISSEUR_H
 #define FOURNISSEUR_H
 

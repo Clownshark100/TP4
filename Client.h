@@ -1,3 +1,12 @@
+/********************************************
+* Titre: Travail pratique #4 - Client.h
+* Date: 12 mars 2018
+* Auteur: Daniel Nahum et Loic LeBlanc
+*
+* Classe Client, permet la création et la modification d'un
+* Client ayant les attributs derives de la classe Usager en plus d'un code Client.
+* Le client a un panier qui contient les produits achetes
+*******************************************/
 #ifndef CLIENT_H
 #define CLIENT_H
 

@@ -1,3 +1,15 @@
+/********************************************
+* Titre: Travail pratique #4 - main.cpp
+* Date: 12 mars 2018
+* Auteur: Daniel Nahum et Loic LeBlanc
+*
+* Questions:
+* 1)  1
+* 2)  puisque la methode de la classe de base n'est pas virtual.
+* 3) d'abord il faudra rendre la methode de la classe A virtual. deuxieme solution : static_cast???
+* 4) Usager a une methode virtuel pure, ce qui fait que c'est une classe abstraite.
+* 5) On peut utiliser un dynamic_cast<produitSolde> et verifier si le produit est un produit solde.
+*******************************************/
 #include <iostream>
 #include <iomanip>
 #include "Produit.h"

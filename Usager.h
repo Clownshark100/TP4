@@ -1,3 +1,12 @@
+/********************************************
+* Titre: Travail pratique #4 - Usager.h
+* Date: 12 mars 2018
+* Auteur: Daniel Nahum et Loic LeBlanc
+*
+* Classe Usager, permet la création et la modification d'un
+* Usager ayant un nom, un prenom, un identifiant et un code postal
+*
+*******************************************/
 #ifndef USAGER_H
 #define USAGER_H
 

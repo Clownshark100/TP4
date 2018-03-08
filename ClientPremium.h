@@ -1,3 +1,12 @@
+/********************************************
+* Titre: Travail pratique #4 - ClientPremium.h
+* Date: 12 mars 2018
+* Auteur: Daniel Nahum et Loic LeBlanc
+*
+* Classe ClientPremium, permet la création et la modification d'un
+* ClientPremium ayant les attributs derives de la classe Client en plus du nombre de jours restants de l'abonnement.
+* 
+*******************************************/
 #ifndef CLIENT_PREMIUM_H
 #define CLIENT_PREMIUM_H
 
