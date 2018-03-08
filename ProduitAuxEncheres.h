@@ -8,6 +8,18 @@
 
 using namespace std;
 
+/********************************************
+* Titre: Travail pratique #4 - ProduitAuxEncheres.h
+* Date: 12 mars 2018
+* Auteur: Daniel Nahum et Loic LeBlanc
+*
+* Classe ProduitAuxEncheres, permet la création et la modification d'un
+* ProduitAuxEncheres, soit un Produit ayant un encherisseur et un prixInitial
+* et pouvant participer à des encheres.
+*
+*******************************************/
+
+
 class ProduitAuxEncheres : public Produit
 {
   public:

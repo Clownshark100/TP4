@@ -6,6 +6,15 @@
 
 using namespace std;
 
+/********************************************
+* Titre: Travail pratique #4 - Solde.h
+* Date: 12 mars 2018
+* Auteur: Daniel Nahum et Loic LeBlanc
+*
+* Classe Solde abstraite pure, permet la création et la modification d'un
+* Solde, soit un un pourcentage de rabais 
+*
+*******************************************/
 class Solde
 {
   public:

@@ -1,6 +1,17 @@
 #ifndef PRODUIT_H
 #define PRODUIT_H
 
+/********************************************
+* Titre: Travail pratique #4 - Produit.h
+* Date: 12 mars 2018
+* Auteur: Daniel Nahum et Loic LeBlanc
+*
+* Classe Produit, permet la création et la modification d'un
+* Produit ayant un nom un numéro de référence et un fournisseur
+*
+*******************************************/
+
+
 #include <string>
 
 using namespace std;
