@@ -17,7 +17,11 @@ class ProduitAuxEncheres : public Produit
 
     double obtenirPrixInitial() const;
     Client *obtenirEncherisseur() const;
-    void modifierEncherisseur(Client* encherisseur); //Ajout de modificateur d'encherisseur afin de pouvoir reinitialiser cette valeur depuis Client::reinitialiser().
+    //Ajout de modificateur d'encherisseur afin de pouvoir reinitialiser 
+    //cette valeur depuis Client::reinitialiser(). Une autre solution, peut-être
+    //meilleure relatif a l'encapsulation aurait été la définition d'une méthode 
+    //void ProduitAuxEncheres::reinitialiser();
+    void modifierEncherisseur(Client* encherisseur); 
     void afficher() const;
 
     void modifierPrixInitial(double prixInitial);
