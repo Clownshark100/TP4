@@ -8,7 +8,7 @@
 #include <iostream>
 
 /**
-* Constructeur par default.
+* Constructeur par parametres.
 */
 Client::Client(unsigned int codeClient)
     : Usager(),

@@ -6,7 +6,7 @@
 #include "ClientPremium.h"
 #include <iostream>
 /**
-* Constructeur par default.
+* Constructeur par parametres.
 */
 ClientPremium::ClientPremium(unsigned int joursRestants)
     : Client(),
