@@ -6,9 +6,9 @@
 * Questions:
 * 1)  1
 * 2)  puisque la methode de la classe parent n'est pas virtual.
-* 3) De un, on peut enlever le virtual de la classe B ce qui fera en sorte que l'objet de classe a appelera la fonction de son parent B.
-* De deux, on peut appeler la fonction de maniere explicite : b ->B::f();
-* 4) Usager a une methode virtuel pure, ce qui fait que c'est une classe abstraite.
+* 3) De un, on peut enlever le virtual de la methode dans la classe B ce qui fera en sorte que l'objet de classe C appelera la methode de son parent B.
+* De deux, on peut appeler la methode de maniere explicite : b ->B::f();
+* 4) Usager a une methode virtuel pure, ce qui fait que c'est une classe abstraite. Puisque c'est une classe abstraite, on ne peut pas l'instancier.
 * 5) On peut utiliser un dynamic_cast<produitSolde> et verifier si le produit est un produit solde.
 *******************************************/
 #include <iostream>
